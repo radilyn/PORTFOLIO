@@ -1,0 +1,69 @@
+.buttons-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.buttons  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4.5rem 5rem;
+    width: 20%;
+    padding: 0rem 1rem ;
+}
+
+
+.hire, .portfolio {
+    background-color: rgba(255, 255, 255, 0.342);
+    height: 2.5rem;
+    width: 10rem;
+    color: #d1848e;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid rgb(201, 189, 189);
+    border-radius: 5rem;
+    position: relative;
+    cursor: pointer;
+}
+.hire::before {
+    content: "";
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%)translateX(calc(100% + 40px));
+    width: 45px;
+    height: 45px;
+    background: #dc143c;
+    border-radius: 50px;
+    transition: transform .25s .25s cubic-bezier(0, 0, .5, 2), width .25s cubic-bezier(0, 0, .5, 2);
+    z-index: -1;
+}
+
+.hire:hover::before, .portfolio:hover::before {
+    width: 70%;
+    transform: translateY(-50%) translateX(-15px);
+    transition: transform .25s cubic-bezier(0, 0, .5, 2), width .25s .25s cubic-bezier(0, 0, .5, 2);
+}
+
+.hire i, .portfolio i {
+    margin-left: 5px;
+    transition: transform .25s .4s cubic-bezier(0, 0, .5, 2);
+}
+
+.hire:hover , .portfolio:hover {
+    transform: translateX(3px);
+}
+
+.portfolio::before {
+    content: "";
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%)translateX(calc(100% + 40px));
+    width: 45px;
+    height: 45px;
+    background: #8cb3d8;
+    border-radius: 50px;
+    transition: transform .25s .25s cubic-bezier(0, 0, .5, 2), width .25s cubic-bezier(0, 0, .5, 2);
+    z-index: -1;
+}

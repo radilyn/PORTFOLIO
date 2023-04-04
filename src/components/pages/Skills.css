@@ -1,0 +1,48 @@
+.skillbox {
+    padding: 3rem 3rem;
+    margin: 2rem 10rem;
+    display:block;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 0.5;
+}
+
+.skills {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 2rem 0rem;
+}
+
+.skills_set {
+   display: flex;
+   font-size: 2rem;
+   justify-content: space-between;
+   text-align: center;
+}
+
+.offer {
+    font-size: 1.5rem;
+    margin-top: 0rem;
+    line-height: 2.5rem;
+    letter-spacing: 1.5px;
+    padding: 1rem 2rem;
+}
+
+.set {
+    text-align: center;
+    border: 1px solid;
+    padding: 0.5rem 0.2rem;
+    height: 1px;
+    width: 1%;
+    border-color: #33cce496;
+    background: linear-gradient(to right, rgba(201, 193, 181, 0.76), lightblue);
+    margin-top: 2rem;
+    line-height: 2rem;
+    font-size: 2rem;
+    color:  rgb(28, 189, 243);
+    letter-spacing: 0.5rem;
+}
+
+  

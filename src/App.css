@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #03001c;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.logo {
+  font-family: "Brush Script MT", "Brush Script Std", cursive;
+  font-size: 6rem;
+  list-style: none;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  padding: 1.5rem;
+  margin-left: 3rem;
+  color: #fc8686;
+}

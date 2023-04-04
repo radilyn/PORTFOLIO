@@ -1,0 +1,22 @@
+
+.social-icons-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 20px;
+    margin-top: 1rem 0rem;
+  }
+  
+.social-icons-container a  {
+    margin-right: 10px;
+    color: #333;
+  }
+  
+.social-icons-container a:last-child {
+    margin-right: 0;
+  }
+  
+.social-icons-container a:hover {
+    color: #3b5998; /* Facebook blue */
+  }
+  
