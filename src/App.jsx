@@ -6,6 +6,9 @@ import About from "./components/pages/About";
 import Projects from "./components/pages/Projects";
 import proj1 from "./components/images/pp.jpg";
 import calcu from "./components/images/calculator.jpg";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 const projects = [
   {

@@ -1,45 +1,68 @@
 .nav-wrapper {
   list-style: none;
   position: fixed;
-  width: 200px;
-  height: 45%;
-  padding: 0px 15px;
+  top: auto;
+  left: 7rem;
+  width: 100px;
+  height: 55%;
   margin: 80px;
   border: 0.5px solid #fc8686;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   border-radius: 2rem;
   color: #fc8686;
+  transition: 0.5s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-wrapper:hover {
+  width: 155px;
+}
+
+.nav-wrapper:hover li,
+a,
+span {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
 }
 
-@include media-breakpoint-between(sm, xl) {
-  .nav {
-    display: block;
-  }
-}
-
-.nav-list {
-  padding: 1.5rem 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.nav-item a,
+.nav-list a,
 li {
+  padding: 1.2rem 0;
+  margin-left: 0px;
   list-style: none !important;
-  margin-top: 3rem;
+  margin-top: 0;
   color: #ccb1b1;
   text-decoration: none;
-  font-size: 1.5rem;
-  transform: scale(1.5px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
 }
-.nav-item a:hover {
+
+.nav-wrapper .nav-item span {
+  display: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.nav-item:hover a {
   color: #7edff7;
-  transition: 0.3s;
+}
+
+.nav-wrapper .nav-item:hover span {
+  color: #7edff7;
+  display: inline-block;
+  width: 100%;
+  margin-left: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 0.4rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
