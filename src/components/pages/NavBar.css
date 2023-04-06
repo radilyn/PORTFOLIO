@@ -1,12 +1,21 @@
+.nav-container {
+  width: 20vw;
+  height: 100vh;
+  display: -ms-inline-grid;
+  background: transparent;
+  --animate-duration: 1s;
+}
+
 .nav-wrapper {
   list-style: none;
-  position: fixed;
-  top: auto;
+  position: sticky;
   left: 7rem;
+  top: 12%;
+  bottom: auto;
   width: 100px;
   height: 55%;
   margin: 80px;
-  border: 0.5px solid #fc8686;
+  border: 0.1px solid #eb565688;
   backdrop-filter: blur(10px);
   border-radius: 2rem;
   color: #fc8686;
@@ -15,10 +24,12 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background: #03001c;
 }
 
 .nav-wrapper:hover {
-  width: 155px;
+  width: 210px;
+  box-shadow: 0px 3px 20px 3px #db449f;
 }
 
 .nav-wrapper:hover li,
@@ -56,13 +67,18 @@ li {
   color: #7edff7;
 }
 
-.nav-wrapper .nav-item:hover span {
+.nav-wrapper:hover .nav-item:hover span {
   color: #7edff7;
   display: inline-block;
   width: 100%;
   margin-left: 10px;
-  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
   border-radius: 0.4rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  /* font-family: "BioRhyme Expanded", serif; */
+}
+
+.nav-item:hover .icons {
+  display: none;
+  text-align: center;
 }

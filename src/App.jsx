@@ -30,15 +30,14 @@ const projects = [
 function App() {
   return (
     <div className="App">
-      <div className="logo">Web Developer</div>
+      <div className="logo">DEVELOPER</div>
       <NavBar />
+      <h1>Welcome to my Portfolio</h1>
       <div>
         <Home />
       </div>
-      <h1 className="name">Ramirez, Radilyn B.</h1>
-      <div>
-        <About />
-      </div>
+      {/* <h1 className="name">Ramirez, Radilyn B.</h1> */}
+      <div>{/* <About /> */}</div>
       <div>{/* <Projects items={projects} /> */}</div>
       {/* <Button /> */}
     </div>

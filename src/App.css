@@ -1,19 +1,71 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #03001c;
   overflow: hidden;
   max-width: 100%;
+  letter-spacing: 3px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Book.ttf");
+  font-weight: 400;
 }
 
 .logo {
-  font-family: "Brush Script MT", "Brush Script Std", cursive;
-  font-size: 6rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 700;
+  font-size: 7rem;
   list-style: none;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  padding: 1.5rem;
-  margin-left: 3rem;
-  color: #fc8686;
+  display: flexbox;
+  padding: 0.1rem 5rem;
+  color: rgb(255, 255, 255);
+  width: auto;
+  text-align: right;
+  text-shadow: 5px 1px 6px #aa367c;
+  letter-spacing: 55px;
+  transition: 0.1s;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1s steps(25) forwards;
+  position: relative;
+}
+
+.logo::after {
+  content: "WEB";
+  position: absolute;
+  top: -30%;
+  left: 10%;
+  transform: translateY(-100%);
+  font-size: 1.5em;
+  color: #28d1bb;
+  animation: bounce 1s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(60%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    top: 100%;
+    transform: translateY(100%);
+  }
 }

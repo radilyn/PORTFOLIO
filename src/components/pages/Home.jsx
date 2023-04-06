@@ -5,10 +5,10 @@ import Social from "./Social";
 
 const Home = () => {
   return (
-    <div className="home-container w-100 m-0 p-0">
-      <div className="info">
+    <div className="home-container w-100 m-0 p-0 row">
+      <div className="info col">
         <img
-          className="home-photo"
+          className=" home-photo"
           src={myImage}
           alt="image"
           style={{ width: "20%" }}
