@@ -1,19 +1,87 @@
 .home-container {
-  display: inline-block;
-  padding: 0rem 2rem;
-}
-
-.column {
-  flex-basis: 50%;
-}
-
-.info {
   display: flex;
-  flex-direction: right;
-  justify-content: flex-end;
-  margin: 0rem 5rem;
+  flex-direction: row;
+  justify-content: start;
+  height: 85vh;
 }
 
+.home-container1 {
+  display: inline-block;
+  align-items: left;
+  justify-content: left;
+  margin: 0;
+  height: 85vh;
+  /* width: 1000px; */
+}
+
+.home-container2 {
+  display: inline-block;
+  align-items: right;
+  justify-content: right;
+  background: transparent;
+  height: 55vh;
+  margin-top: -25rem;
+}
+
+.info h4 {
+  display: inline;
+  justify-content: left;
+  text-align: left;
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
+  border: 1px solid rgb(248, 240, 240);
+  border-radius: 0.5rem;
+  margin: 1rem 20rem;
+  padding: 0 1rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.info h1 {
+  font-size: 3rem;
+  margin: 1rem 19rem;
+  padding: 0 1rem;
+  color: white;
+  --animate-duration: 2s;
+  white-space: nowrap;
+  animation: typing 3s steps(25) forwards;
+  word-wrap: wrap;
+  text-align: left;
+}
+.h1::after {
+  content: "WEB DESIGNER";
+  position: absolute;
+  top: -20%;
+  left: 6%;
+  transform: translateY(-100%);
+  font-size: 1.3em;
+  color: #28d1bb;
+  animation: bounce 1s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(60%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    top: 50%;
+    transform: translateY(50%);
+  }
+}
+
+p {
+  font-size: 1rem;
+  margin: 1rem 18rem;
+  padding: 0 1rem;
+  color: white;
+}
 .home-photo {
   transition: 0.5s;
   border-width: 5px;
@@ -52,43 +120,6 @@
   transform: scale(1.1);
   color: #6096b4;
   text-shadow: 3px 2px 3px #c7a6a6;
-}
-
-.job {
-  background: url("./src/components/images/b.jpg");
-  display: block;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  text-align: center;
-  font-size: 3rem;
-  line-height: 5.5rem;
-  letter-spacing: 2px;
-  font-weight: 500;
-  color: #463633;
-  border: 0.2ch solid rgb(221, 217, 217);
-  padding: -0.1rem 1rem;
-  margin: 8rem 0rem;
-  height: auto;
-  width: auto;
-  border-radius: 1rem;
-  box-sizing: border-box;
-}
-
-.jspan {
-  background-color: #f8efe7;
-  border-radius: 1rem;
-  font-size: 4rem;
-  /* font-weight: 600; */
-  padding: 1.5rem;
-  border: 2px solid;
-  transition: 0.5s;
-}
-
-.jspan:hover {
-  background-color: #f8efe78c;
-  transform: scale(2);
-  cursor: pointer;
-  font-weight: 600;
-  border-radius: 1rem;
 }
 
 .social {

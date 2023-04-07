@@ -1,5 +1,5 @@
 import "./App.css";
-import NavBar from "./components/pages/NavBar";
+// import NavBar from "./components/pages/NavBar";
 import Home from "./components/pages/Home";
 import Button from "./components/pages/Button";
 import About from "./components/pages/About";
@@ -31,8 +31,6 @@ function App() {
   return (
     <div className="App">
       <div className="logo">DEVELOPER</div>
-      <NavBar />
-      <h1>Welcome to my Portfolio</h1>
       <div>
         <Home />
       </div>

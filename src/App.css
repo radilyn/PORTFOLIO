@@ -3,6 +3,7 @@
   padding: 0;
   overflow: hidden;
   max-width: 100%;
+  height: auto;
   letter-spacing: 3px;
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -29,10 +30,10 @@
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   font-weight: 700;
-  font-size: 7rem;
+  font-size: 7.5rem;
   list-style: none;
   display: flexbox;
-  padding: 0.1rem 5rem;
+  padding: 0.1rem 10rem;
   color: rgb(255, 255, 255);
   width: auto;
   text-align: right;
@@ -48,13 +49,13 @@
 .logo::after {
   content: "WEB";
   position: absolute;
-  top: -30%;
-  left: 10%;
+  top: -20%;
+  left: 6%;
   transform: translateY(-100%);
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #28d1bb;
   animation: bounce 1s forwards;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 @keyframes bounce {
@@ -65,7 +66,7 @@
     transform: translateY(100%);
   }
   100% {
-    top: 100%;
-    transform: translateY(100%);
+    top: 50%;
+    transform: translateY(50%);
   }
 }
